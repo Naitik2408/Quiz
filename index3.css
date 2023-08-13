@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgb(93, 0, 174),rgb(160, 0, 131));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 30%;
+    /* height: 50%; */
+    border: 2px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#questions{
+    width: 98%;
+    height: 60px;
+    font-weight: 700;
+    background-color: rgb(255, 115, 0);
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+.All_options{
+    width: 98%;
+    height: 40px;
+    background-color: rgb(255, 179, 0);
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#next_previous{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+    height: 40px;
+
+}
+#next{
+    width: fit-content;
+    height: 30px;
+    background-color: green;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+}
+#previous{
+    width: fit-content;
+    height: 30px;
+    background-color: green;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+}
+#submit{
+    width: 98%;
+    height: 40px;
+    background-color: green;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#total_value{
+    font-size: 30px;
+    background-color: wheat;
+    padding: 10px 30px;
+    border-radius: 10px;
+    /* width: 300px;
+    height: 20px;
+    background-color: yellow; */
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    section{
+        width: 98%;
+        padding: 30px 10px;
+        height: 60%;
+    }
+    #questions{
+        margin-bottom: 20px;
+        height: 60px;
+    }
+    .All_options{
+        margin: 20px;
+        height: 50px;
+    }
+}
